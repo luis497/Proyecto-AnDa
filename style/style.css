@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300..700&display=swap');
+/* variables */
+:root{
+    /* Colores */
+    --primer-bloque: #FFE6E6;
+    --segundo-bloque: #E1AFD1;
+    --tercer-bloque: #AD88C6;
+    /* Letra */
+    --color-letra: #000000;
+    /* Boton */
+    --color-boton: #7469B6;
+}
+/*Estilos generales*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+    font-family:"Signika Negative", sans-serif;
+}
+/* Estilo general de bloques */
+.bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    max-width: 480px;
+    height: 100vh;
+    text-align: center;
+}
+/* Primer bloque */
+.bloque__principal{
+    background-color: var(--primer-bloque);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.bloque__principal .title{
+    font-size: 2.7rem;
+}
+.bloque__principal .flork-corazon {
+    width: 150px;
+    height: 150px;
+}
+.bloque__principal .seccion-explicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    padding: 15px;
+}
+.bloque__principal .seccion-explicacion .saludo{
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+}
+.bloque__principal .seccion-explicacion .sustentacion{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+.bloque__principal .flecha-abajo{
+    background-image: url(/assets/icons/Frame\ 17.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #00FF0000;
+}
+/* Segundo Bloque */
+.bloque__secundario{
+    background-color: var(--segundo-bloque);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bloque__secundario .flork-comiendo{
+    width: 150px;
+    height: 150px;
+}
+.bloque__secundario .botones-eleccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 150px;
+    justify-content: space-evenly;
+}
+.bloque__secundario .botones-eleccion .respuesta{
+    font-size: 1.7rem;
+}
+.bloque__secundario .botones-eleccion .boton{
+    width: 110px;
+    height: 40px;
+    background-color: var(--color-boton);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+.bloque_terciario {
+    background-color: var(--tercer-bloque);
+}
+.bloque_terciario .flork-guillando {
+    width: 150px;
+    height: 150px;
+}
+.bloque_terciario .felicidades{
+    font-size: 1.7rem;
+    margin-top: 30px;
+}
