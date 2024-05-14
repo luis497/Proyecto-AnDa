@@ -62,7 +62,7 @@ html{
     line-height: 1.6rem;
 }
 .bloque__principal .flecha-abajo{
-    background-image: url(/assets/icons/Frame\ 17.png);
+    background-image: url(./assets/icons/Frame\ 17.png);
     background-position: center;
     background-repeat: no-repeat;
     width: 50px;
